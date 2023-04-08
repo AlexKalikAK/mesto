@@ -1,0 +1,24 @@
+.elements {
+  
+  color: #000;
+  width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 300px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 20px 17px;
+  justify-content: center;
+  margin: 0 auto 48px;
+  padding: 0;
+  list-style: none;
+  
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+  .elements {
+    width: 880px;
+    margin: 51px auto 66px;
+  }
+}
+
