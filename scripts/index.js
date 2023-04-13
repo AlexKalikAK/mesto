@@ -8,7 +8,6 @@ let aboutFilled;
 const editButtion = document.querySelector('.profile__btn-edit');
 const popup = document.querySelector('.popup');
 const closeButtion = document.querySelector('.popup__close');
-const submitButtion = document.querySelector('.popup__btn-save');
 
 
 function handleFormSubmit (evt) {
@@ -22,7 +21,8 @@ function handleFormSubmit (evt) {
     // Выберите элементы, куда должны быть вставлены значения полей
     profilename.textContent = nameFilled;
     profileabout.textContent = aboutFilled;
-    
+
+    close();
 
     // Вставьте новые значения с помощью textContent
 }
@@ -47,7 +47,6 @@ function close() {
  
  editButtion.addEventListener('click', open);
  closeButtion.addEventListener('click', close);
- submitButtion.addEventListener('click', close);
 
  
 
